@@ -16,7 +16,7 @@
 
 		<!--nav-->
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-			<a class="navbar-brand" href="#"><img src="img/nuno.png"></a>
+			<a class="navbar-brand" href="#home"><img src="img/logo_yello.jpeg"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -33,7 +33,7 @@
 						<a href="#services" class="nav-link">Services</a>
 					</li>
 					<li class="nav-item">
-						<a href="#clients" class="nav-link">Clients</a>
+						<a href="#testimonials" class="nav-link">Testimonials</a>
 					</li>
 					<li class="nav-item">
 						<a href="#contact" class="nav-link">Contact</a>
@@ -61,10 +61,11 @@
 
 	<!--start about-->
 	<div id="about" class="offset">
-		<div class="jumbotron yello-about">
-			<div class="narrow">
-				<div class="col-12 text-center">
-					<img src="img/apple.png">
+		<div class="jumbotron yello-about bg-warning">
+			
+			<div class="container narrow">
+				<div id="img-about">
+					<!--<img  src="img/apple.png">-->
 				</div>
 				<div class="col-12 text-center">
 					<h1>About Us</h1>
@@ -72,8 +73,8 @@
 						and strategists that plan and excute goal-oriented social campaigns 
 						in order to raise awarenes and build brand trust through targeted audience interactions.
 					</p>
-					<p id="aboutusp1"> Our servises include day-to-day social media management and in0depth analytics 
-						that help better predict and develip a data-driven culture for your businesses.
+					<p id="aboutusp1"> Our servises include day-to-day social media management and in depth analytics 
+						that help better predict and develop a data-driven culture for your businesses.
 					</p>
 				</div>
 			</div>
@@ -85,35 +86,35 @@
 	<div id="services" class="offset">
 		<div class="jumbotron">
 			<div class="narrow">
-				<div class="col-12 text-center">
+				<div id="service-desc" class="col-12 text-center">
 					<h1>Our Services</h1>
-					<p>We promise to dig deep into the soul of your business and extract the essenceof information 
+					<p>We promise to dig deep into the soul of your business and extract the essence of information 
 						to embody your brand, understand your personas, help you reach your audience,
 						and build trust on your behalf.
 					</p>
 				</div>
 			</div>
 			<div class="card-deck">
-				<div class="card">
-					<img src="img/client1.png" class="card-img-top">
-					<div class="card-img-overlay">
+				<div class="card border-0">
+					<img src="img/social_media.jpg" class="card-img-top">
+					<div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
 						<h3>Social Media Management</h3>
 						<p>Manage your digital awareness & identity alignment 
 							through relevant content and ofcourse, data!
 						</p>
 					</div>
 				</div>
-				<div class="card">
-					<img src="img/client2.png" class="card-img-top">
-					<div class="card-img-overlay">
+				<div class="card border-0">
+					<img src="img/consultancy.jpeg" class="card-img-top">
+					<div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
 						<h3>Business Solutions & Data Consultancy</h3>
 						<p>Know your positioning based on aspects of your business. To find out more, get in touch.
 						</p>
 					</div>
 				</div>
-				<div class="card">
-					<img src="img/client2.png" class="card-img-top">
-					<div class="card-img-overlay">
+				<div class="card border-0">
+					<img src="img/web_analytics.jpg" class="card-img-top">
+					<div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
 						<h3>Organic & Performance Marketing</h3>
 						<p>Reach more audience and penetrate new segments to further elevate potential cutomers.
 						</p>
@@ -125,27 +126,31 @@
 	<!--end services-->
 
 	<!--start clients-->
-	<div id="clients" class="offset">
+	<div id="testimonials" class="offset">
 		<div class="jumbotron">
 			<div class="col-12 text-center">
-				<h1>Clients</h1>
-				<h3>What's Being Said</h3>
+				<h1>Testimonials</h1>
+				<h4>What's Being Said</h4>
 			</div>
 				<div class="card-deck">
-						<div class="card text-white bg-dark">
+						<div class="card text-white ">
 							<div class="card-body text-center">
-								<h3>"</h3>
+								<i class="fas fa-quote-right fa-2x quote"></i>
+								<div><p><br></p></div>
+								<div><p><br></p></div>
 								<p>Yello deliver an exceptional services that beyond my expectation.
 									Critical thinking is the only thing here that can create an outstanding
-									data dashboard that i need for myy business, which they are able to prepare 
-									and present the product crustal clear. Great job and thanks for an amazing experiences, guys!
+									data dashboard that i need for my business, which they are able to prepare 
+									and present the product crystal clear. Great job and thanks for an amazing experiences, guys!
 								</p>
 								<h2>PT. Noah Ads</h2>
 							</div>
 						</div>
-						<div class="card text-white bg-dark">
-							<div class="card-body text-center">
-								<h3 >"</h3>
+						<div class="card text-white ">
+							<div class="card-body text-center quote">
+								<i class="fas fa-quote-right fa-2x"></i>
+								<div><p><br></p></div>
+								<div><p><br></p></div>
 								<p >
 									We never expect to get a fast yet reliable dashboard in a short mannered of time.
 									The service is impalpable and Yello has take it to another level by assessing our 
@@ -161,15 +166,35 @@
 	
 	<!--start contact-->
 	<div id="contact" class="offset">
+		<div class="jumbotron bg-warning">
+			<div id="contactContainer" class="row text-center">
+				<div id="contactUs" class="col-lg-6 col-md-12">
+					<h1>Contact Us</h1>
+					<p>JL. Pluit Sakti IX No.7 <br>
+						Pluit <br>
+						North Jakarta 14459 <br>
+						Indonesia <br>
+					</p>
+					<p>hola.yello.holla@gmail.com <br> 087786050223</p>
+					<a href="https://www.instagram.com/weare.yello/?hl=en" target="_blank"><i class:"fab fas-instagram"></i></a> 
+				</div>
+				<div id="map" class="col-lg-6 col-md-12">
+					<p>google map goes here</p>
+				</div>
+				
+			</div>
+		</div>
+		
 
 	</div>
 	<!--end contact-->
-
+	<footer id="footer-copy">&copy; 2020, yello.co.id or its affiliates - All Rights Reserved</footer>
 <!--- Script Source Files -->
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+<script src="js/custom_nav.js"></script>
 <!--- End of Script Source Files -->
-
+<!--https://www.instagram.com/weare.yello/?hl=en-->
 </body>
 </html>

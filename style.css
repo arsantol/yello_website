@@ -7,6 +7,26 @@ body {
   color: black
 }
 
+.offset:before{
+  display:block;
+  content: "";
+  height: 3.6rem;
+  margin-top: -3.6rem;
+}
+
+.narrow {
+  min-width: 40%;
+  max-width: 80%;
+  margin: 2rem auto;
+  padding-top: 2rem;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+.narrow h1 {
+    font-size: 2.4rem;
+}
+
 /*navi*/
 .navbar{
   text-transform: uppercase;
@@ -19,7 +39,7 @@ body {
   height: 2rem;
 }
 .navbar-nav li{
-  padding-right: .7rem;
+  padding-right: 0.7rem;
 }
 .navbar-dark .navbar-nav .nav-link {
   color: white;
@@ -33,7 +53,8 @@ body {
 }
 
 .home-inner {
-  background-image: url(img/computers.png);
+  /*background-image: url(img/computers.png);*/
+  background-image: url(img/home.jpg);
 }
 
 /*caption*/
@@ -42,13 +63,15 @@ body {
   width: 100%;
   max-width: 100%;
   position: absolute;
-  top: 45%;
+  top: 40%;
   z-index: 1;
   color: white;
 }
 
 .caption h1 {
   font-size: 4.5rem;
+  /*dynamicfont*/
+  /*font-size: 6vw*/
   font-weight: 700;
   letter-spacing: .3rem;
   text-shadow: .1rem .1rem .8rem black;
@@ -58,21 +81,148 @@ body {
 
 .caption h3{
   font-size: 2rem;
+  /*dynamicfont*/
+  /*font-size: 2vw*/
   text-shadow: .1rem .1rem .5rem black;
   padding-bottom: 1.6rem;
 }
 
- 
-/*============= COURSE SECTION =============*/
+/*============= ABOUT ======================*/
 
-.narrow {
-  width: 75%;
-  margin: 1.5rem auto;
-  padding-top: 2rem;
+
+#img-about{
+  padding-top: 0rem;
+  margin:0 auto;
+  height: 200px;
+  width: 280px;
+  border-radius: 50%;
+  background-image: url("img/about_us.jpg");
+  background-size:cover;
+  padding-bottom: 2rem;
 }
-.narrow h1 {
-    font-size: 2.4rem;
-  }
+
+#about h1 {
+  padding-top: 3rem;
+  padding-bottom: 1.6rem;
+  font-weight: bolder;
+}
+.jumbotron{
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+
+/*============= SERVICES ===================*/
+
+#services h1 {
+  padding-bottom: 1.6rem;
+  font-weight: bolder;
+  color: #dfc30c;
+}
+
+#services #service-desc p{
+  color:white;
+  font-size: 1.1rem;
+  line-height: 2.4rem;
+} 
+
+.card-deck {
+  margin:0 auto;
+  max-width: 80%;
+}
+
+#services .card{
+  min-width: 20rem;
+}
+.quote{
+  text-shadow: 0 0 3px #dfc30c;
+}
+
+#services .card p{
+  color:white;
+  font-size: 1 rem;
+  min-width:60%;
+}
+#services .card i{
+  padding-bottom:1rem;
+}
+#services .card h3{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  min-width: 60%;
+  padding-bottom:1rem;
+}
+
+#services .jumbotron{
+  min-height: 100vh;
+  background-color:black;
+}
+
+.card-img-top img{
+  filter: blur(2px);
+}
+
+/*============= CLIENTS =============*/
+
+#testimonials h1 {
+  padding-bottom: 1.6rem;
+  font-weight: bolder;
+  color: #dfc30c;
+}
+
+#testimonials h4{
+  padding-bottom:1rem;
+  color:white;
+}
+#testimonials .card{
+  background-color:black;
+}
+
+#testimonials .card p{
+  font-size: 1 rem;
+  min-width:60%;
+  max-width:70%;
+  margin:0 auto;
+}
+
+#testimonials .card h2{
+  padding-top:2rem;
+}
+
+#testimonials .jumbotron{
+  background-color:#262020;
+}
+
+/*============= CONTACT =============*/
+
+#contactUs {
+  background-color:black;
+  
+}
+#contactUs h1{
+  padding-top:2rem;
+  color: #dfc30c;
+  font-weight:bolder;
+  padding-bottom:1rem;
+}
+
+#contactUs p{
+  color:white;
+  padding-bottom: 2rem;
+}
+
+#footer-copy{
+  background-color:#262020;
+  text-align: center;
+  color:grey;
+  font-size:15px;
+}
+
+/*============= BTN =============*/
+
+
+
 .btn-secondary {
   border-width: medium;
   border-radius: 0;
